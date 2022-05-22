@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--begin::Head-->
+
+<head>
+  <base href="">
+  <meta charset="utf-8" />
+  <title>Deloitte</title>
+  <meta name="description" content="Worlds Leading Job Portal" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!--begin::Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+  <!--end::Fonts-->
+
+  <!--begin::Global Theme Styles(used by all pages)-->
+  <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+  <!--end::Global Theme Styles-->
+
+  <!--begin::Layout Themes(used by all pages)-->
+
+  <!--end::Layout Themes-->
+  <link rel="shortcut icon" href="logo.png" />
+
+  <!-- begin::jquery/mycss on top -->
+  <link href="./myStyle.css" rel="stylesheet" type="text/css" />
+  <link href="./osicon.css" rel="stylesheet" type="text/css" />
+  <script src="assets/plugins/custom/moment/moment.min.js"></script>
+  <script src="assets/plugins/custom/jquery/jquery.min.js"></script>
+  <!-- authentication and baseScript -->
+  <script src="assets/js/pages/my-script.js"></script>
+  <!--end::jquery/mycss on top -->
+
+</head>
+
+<!--end::Head-->
+
+<!--begin::Body-->
+
+<body id="kt_body"
+  class="page-loading-enabled page-loading header-fixed header-mobile-fixed subheader-enabled page-loading">
+  <!-- // dir="rtl" -->
+
+  <!-- [html-partial:include:{"file":"partials/_page-loader.html"}]/ -->
+  <div id="p-loader"></div>
+
+
+  <!--[html-partial:include:{"file":"partials/_header-mobile.html"}]/-->
+  <div id="p-header-mobile"></div>
+
+  <div class="d-flex flex-column flex-root">
+    <!--begin::Page-->
+    <div class="d-flex flex-row flex-column-fluid page">
+      <!--begin::Wrapper-->
+      <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+
+        <!--[html-partial:include:{"file":"partials/_header.html"}]/-->
+        <div id="p-header"></div>
+
+        <!--begin::Content-->
+        <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+          <!--[html-partial:include:{"file":"partials/_subheader/subheader-v7.html"}]/-->
+          <div id="p-subheader"></div>
+          <div class="d-flex flex-column flex-column-fluid">
+
+            <!-- section 1 start -->
+            <div class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
+              <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                <!--begin::Info-->
+                <div class="d-flex align-items-center flex-wrap mr-2">
+                  <!--begin::Page Title-->
+                  <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Latest Candidates</h5>
+                  <!--end::Page Title-->
+                  <!--begin::Action-->
+                  <div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
+                  <a href="risk_register.html" target="_self"
+                    class="btn btn-light-primary font-weight-bolder btn-sm">View More</a>
+                  <!--end::Action-->
+                </div>
+                <!--end::Info-->
+              </div>
+            </div>
+
+            <div class="d-flex flex-column-fluid">
+              <!-- begin: container -->
+              <div class="container">
+                <div class="carousel owl-carousel owl-carousel-premium" id="owl-carousel-premium">
+                  <!-- owl-carousel-premium will render here -->
+                  <div class="spinner spinner-primary spinner-lg m-15"></div>
+                </div>
+                <div class="carousel owl-carousel owl-carousel-featured" id="owl-carousel-featured">
+                  <!-- owl-carousel-featured will render here -->
+                  <div class="spinner spinner-primary spinner-lg m-15"></div>
+                </div>
+                <div class="carousel owl-carousel owl-carousel-standard" id="owl-carousel-standard">
+                  <!-- owl-carousel-standard will render here -->
+                  <div class="spinner spinner-primary spinner-lg m-15"></div>
+                </div>
+              </div>
+              <!-- end: container -->
+            </div>
+
+            <!-- section 2 start -->
+            <div class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
+              <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                <!--begin::Info-->
+                <div class="d-flex align-items-center flex-wrap mr-2">
+                  <!--begin::Page Title-->
+                  <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Job Seekers</h5>
+                  <!--end::Page Title-->
+                  <!--begin::Action-->
+                  <div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
+                  <a href="risk_register.html" target="_self"
+                    class="btn btn-light-primary font-weight-bolder btn-sm">View More</a>
+                  <!--end::Action-->
+                </div>
+                <!--end::Info-->
+              </div>
+            </div>
+
+            <div class="d-flex flex-column-fluid">
+              <!-- begin: container -->
+              <div class="container">
+                <div class="card card-custom">
+                  <div class="card-body">
+                    <div class="row" id="jobTitleWiseCount">
+                      <!-- ul list -->
+                      <div class="spinner spinner-primary spinner-lg m-15"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--end::Content-->
+
+        <!--[html-partial:include:{"file":"partials/_footer.html"}]/-->
+        <div id="p-footer"></div>
+
+      </div>
+      <!--end::Wrapper-->
+    </div>
+
+    <!--end::Page-->
+  </div>
+
+  <!--[html-partial:include:{"file":"partials/_extras/offcanvas/quick-user.html"}]/-->
+  <div id="p-quick-user"></div>
+
+  <!--[html-partial:include:{"file":"partials/_extras/scrolltop.html"}]/-->
+  <div id="p-scrolltop"></div>
+
+  <script>
+    $("#p-loader").load("./partials/_page-loader.html", function () { $(this).children(':first').unwrap() });
+    // begin::checking token is save  #####################################################################################
+    if (localStorage.getItem("babaaish_token") === null) { // header home
+      $("#p-header-mobile").load("./partials/_home-header-mobile.html", function () { $(this).children(':first').unwrap(); });
+      $("#p-header").load("./partials/_home-header.html", function () { $(this).children(':first').unwrap(); });
+    } else { // header seeker/employer
+      window.dataJWT = parseJwt(localStorage.getItem("babaaish_token"));
+      let role = localStorage.getItem("babaaish_role");
+      let preHeader = role == 'employer' ? 'arbaab' : (role == 'jobseeker' ? 'seeker' : role);
+      $("#p-header-mobile").load(`./partials/_${preHeader}-header-mobile.html`, function () { $(this).children(':first').unwrap(); });
+      $("#p-header").load(`./partials/_${preHeader}-header.html`, function () { $(this).children(':first').unwrap(); });
+      $("#p-quick-user").load(`./partials/_extras/offcanvas/${preHeader}-quick-user.html`, function () { $(this).children(':first').unwrap(); });
+    }
+    // end::checking token is save  #######################################################################################
+    $("#p-subheader").load("./partials/_subheader/subheader-v7.html", function () { $(this).children(':first').unwrap(); });
+    $("#p-scrolltop").load("./partials/_extras/scrolltop.html", function () { $(this).children(':first').unwrap(); });
+  </script>
+
+  <!--begin::Global Theme Bundle(used by all pages)-->
+  <script src="assets/plugins/global/plugins.bundle.js"></script>
+  <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+  <script src="assets/js/KTAppSettings.js"></script>
+  <script src="assets/js/scripts.bundle.js"></script>
+  <!--end::Global Theme Bundle-->
+
+  <!--begin::Global Config(global config for global JS scripts)-->
+  <script src="assets/js/render/elements-index.js"></script>
+  <script src="assets/js/pages/index.js"></script>
+  <!--end::Global Config-->
+</body>
+
+<!--end::Body-->
+
+</html>

@@ -1,0 +1,52 @@
+<!--begin::Subheader-->
+<div class="subheader py-5 py-lg-10 gutter-b subheader-transparent" id="kt_subheader"
+  style="background-color: #663259; background-position: right bottom; background-size: auto 100%; background-repeat: no-repeat; background-image: url(assets/media/svg/patterns/taieri.svg)">
+  <div class="container d-flex flex-column">
+
+    <!--begin::Title-->
+    <div class="d-flex align-items-sm-end flex-column flex-sm-row mb-5">
+      <h2 class="d-flex align-items-center text-white mr-5 mb-0">RISK LOGGING</h2>
+      <a href="auth.html?id=Seeker" class="text-white opacity-60 font-weight-bold"></a>
+    </div>
+    <!--end::Title-->
+
+    <!--begin::Search Bar-->
+    <div class="d-flex align-items-md-center mb-2 flex-column flex-md-row">
+      <button class="btn btn-dark font-weight-bold btn-hover-light-primary mt-3 mr-6 mt-sm-0 px-7">+ New
+        Risk</button>
+      <button class="btn btn-dark font-weight-bold btn-hover-light-primary mt-3 mr-6 mt-sm-0 px-7">
+        Risk Issue Pending</button>
+      <button class="btn btn-dark font-weight-bold btn-hover-light-primary mt-3 mr-6 mt-sm-0 px-7">
+        Risk Issue Resolved</button>
+      <button class="btn btn-dark font-weight-bold btn-hover-light-primary mt-3 mr-6 mt-sm-0 px-7">
+        High Risk Issue</button>
+      <button class="btn btn-dark font-weight-bold btn-hover-light-primary mt-3 mr-6 mt-sm-0 px-7">
+        Low Risk Issue</button>
+      <button class="btn btn-dark font-weight-bold btn-hover-light-primary mt-3 mr-6 mt-sm-0 px-7">
+        Regulatory Breaches</button>
+    </div>
+    <!--end::Search Bar-->
+  </div>
+</div>
+<!--end::Subheader-->
+
+<script>
+  $(document).ready(function () {
+    // search location
+    $('.search-location').typeahead({
+      hint: true,
+      highlight: true,
+      minLength: 1
+    }, {
+      name: 'countries',
+      source: substringMatcher(countries.map(el => `${el.text}`))
+    });
+
+    // on submit search header
+    $('#form-subheader').on('submit', function (e) {
+      e.preventDefault(e);
+      window.open(`risk_register.html?search=${$('#search-keyword').val()}&location=${$('#search-location').val()}`, '_self');
+    });
+
+  });
+</script>

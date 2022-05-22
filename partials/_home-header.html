@@ -1,0 +1,146 @@
+<!--begin::Header-->
+<div id="kt_header" class="header flex-column header-fixed">
+
+  <!--begin::Top-->
+  <div class="header-top">
+
+    <!--begin::Container-->
+    <div class="container">
+
+      <!--begin::Left-->
+      <div class="d-none d-lg-flex align-items-center mr-3">
+
+        <!--begin::Logo-->
+        <a href="index.html" class="mr-10">
+          <img alt="Logo" src="logo-white.png" class="max-h-50px" />
+        </a>
+        <!--end::Logo-->
+
+        <!--begin::Dropdown-->
+        <div class="header-switcher dropdown">
+          <a href="#" class="btn btn-hover-primary font-weight-bold font-size-sm dropdown-toggle py-3 px-6 border-0 mr-5"
+            data-toggle="dropdown" data-offset="0px,1px" aria-haspopup="true" aria-expanded="false">Arbaab</a>
+          <div class="dropdown-menu p-0 m-0 dropdown-menu-md dropdown-menu-left">
+
+            <!--begin::Navigation-->
+            <ul class="navi navi-hover py-5">
+              <li class="navi-item">
+                <a href="auth.html" class="navi-link">
+                  <span class="navi-icon">
+                    <i class="flaticon2-rocket-1"></i>
+                  </span>
+                  <span class="navi-text">LogIn</span>
+                </a>
+              </li>
+              <li class="navi-item">
+                <a href="auth.html?activate=signup&id=Arbaab" class="navi-link">
+                  <span class="navi-icon">
+                    <i class="flaticon2-list-3"></i>
+                  </span>
+                  <span class="navi-text">Signup</span>
+                </a>
+              </li>
+            </ul>
+            <!--end::Navigation-->
+
+          </div>
+        </div>
+        <!--end::Dropdown-->
+
+        
+
+        <!--begin::Dropdown-->
+        <div class="header-switcher dropdown">
+          <a href="#" class="btn btn-hover-primary font-weight-bold font-size-sm dropdown-toggle py-3 px-6 border-0"
+            data-toggle="dropdown" data-offset="0px,1px" aria-haspopup="true" aria-expanded="false">Find Me</a>
+          <div class="dropdown-menu p-0 m-0 dropdown-menu-md dropdown-menu-left">
+
+            <!--begin::Navigation-->
+            <ul class="navi navi-hover py-5">
+              <li class="navi-item">
+                <a href="auth.html?id=Seeker" class="navi-link">
+                  <span class="navi-icon">
+                    <i class="flaticon2-rocket-1"></i>
+                  </span>
+                  <span class="navi-text">LogIn</span>
+                </a>
+              </li>
+              <li class="navi-item">
+                <a href="auth.html?activate=signup&id=Seeker" class="navi-link">
+                  <span class="navi-icon">
+                    <i class="flaticon2-list-3"></i>
+                  </span>
+                  <span class="navi-text">Signup</span>
+                </a>
+              </li>
+            </ul>
+            <!--end::Navigation-->
+
+          </div>
+        </div>
+        <!--end::Dropdown-->
+      </div>
+      <!--end::Left-->
+
+      <!--begin::Topbar-->
+      <div class="topbar" id="topbar">
+
+        <!-- language -->
+        <div class="dropdown d-none" data-toggle="tooltip" title="" data-original-title="Language" data-placement="right">
+          <!--begin::Toggle-->
+          <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px" aria-expanded="false">
+            <div class="btn btn-icon btn-dropdown btn-lg mr-1">
+              <img class="h-20px w-20px rounded-sm" src="./assets/media/svg/flags/226-united-states.svg">
+            </div>
+          </div>
+          <!--end::Toggle-->
+          <!--begin::Dropdown-->
+          <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+            <!--begin::Nav-->
+            <ul class="navi navi-hover py-4">
+              <!--begin::Item-->
+              <li class="navi-item">
+                <a href="#" class="navi-link">
+                  <span class="symbol symbol-20 mr-3">
+                    <img src="./assets/media/svg/flags/226-united-states.svg">
+                  </span>
+                  <span class="navi-text">English</span>
+                </a>
+              </li>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <li class="navi-item active">
+                <a href="#" class="navi-link">
+                  <span class="symbol symbol-20 mr-3">
+                    <img src="./assets/media/svg/flags/151-united-arab-emirates.svg">
+                  </span>
+                  <span class="navi-text">Arabic</span>
+                </a>
+              </li>
+              <!--end::Item-->
+            </ul>
+            <!--end::Nav-->
+          </div>
+          <!--end::Dropdown-->
+        </div>
+        <!-- language -->
+        
+      </div>
+
+      <!--end::Topbar-->
+    </div>
+
+    <!--end::Container-->
+  </div>
+  <!--end::Top-->
+
+  <!--begin::Bottom-->
+  <!-- removed -->
+  <!--end::Bottom-->
+
+</div>
+<!--end::Header-->
+
+<script>
+  $("#p-quick-actions").load("./partials/_extras/dropdown/quick-actions.html", function () { $(this).children(':first').unwrap(); });
+</script>
